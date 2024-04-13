@@ -22,7 +22,7 @@ jobs:
           distribution: "temurin"
           cache: maven
       - name: Set up environment variables
-        run: echo "MONGO.DB_URI=${{ secrets.DB_URI }}" >> $GITHUB_ENV
+        run: echo "MONGO_DB_URI=${{ secrets.DB_URI }}" >> $GITHUB_ENV
       - name: Display environment variables
         run: echo "DB_URI:${{ secrets.DB_URI }}"
       - name: Change to the project directory
