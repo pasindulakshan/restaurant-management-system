@@ -2,11 +2,15 @@ name: CI/CD Pipeline - Menu Management Service
 
 on:
   push:
-    branches: ["master"]
+    branches:
+      - master
+      - development
     paths:
       - "menu-management-service/**"
   pull_request:
-    branches: ["master"]
+    branches:
+      - master
+      - development
     paths:
       - "menu-management-service/**"
 
