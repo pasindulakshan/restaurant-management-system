@@ -14,17 +14,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Set up JDK 17
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
           java-version: "17"
           distribution: "temurin"
           cache: maven
       - name: Set up environment variables
         run: echo "MONGO_DB_URI=${{ secrets.DB_URI }}" >> $GITHUB_ENV
-      - name: Display environment variables
-        run: echo "DB_URI:${{ secrets.DB_URI }}"
       - name: Change to the project directory
         run: cd menu-management-service
       - name: Build with Maven
