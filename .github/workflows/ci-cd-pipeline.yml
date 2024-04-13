@@ -27,4 +27,6 @@ jobs:
       run: cd menu-management-service
     - name: Build with Maven
       run: mvn clean install
+      env:
+        MONGO.DB_URI: ${{ secrets.DB_URI }}
       working-directory: ./menu-management-service
