@@ -1,6 +1,7 @@
 package com.restaurant.common.models;
 
 import com.restaurant.common.models.embeddable.Status;
+import lombok.Data;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
@@ -13,6 +14,7 @@ import org.springframework.data.annotation.Version;
 import javax.validation.constraints.NotNull;
 import java.time.Instant;
 
+@Data
 public class Audit {
 
   @Id

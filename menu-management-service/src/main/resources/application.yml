@@ -8,6 +8,6 @@ spring:
     active: DEV
   data:
     mongodb:
-      uri: ${MONGO.DB_URI}
+      uri: ${MONGO_DB_URI}
   main:
     allow-bean-definition-overriding: true
