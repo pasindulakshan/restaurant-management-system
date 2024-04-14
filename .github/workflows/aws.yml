@@ -12,7 +12,7 @@ on:
 
 env:
   AWS_REGION: us-east-1 # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: restaurant-staging # set this to your Amazon ECR repository name
+  ECR_REPOSITORY: menu-management-service # set this to your Amazon ECR repository name
   ECS_SERVICE: MY_ECS_SERVICE # set this to your Amazon ECS service name
   ECS_CLUSTER: MY_ECS_CLUSTER # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION:
@@ -46,8 +46,6 @@ jobs:
       - name: Build with Maven
         run: mvn clean install
         working-directory: ./menu-management-service
-      - name: Build docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/menu-management-service:latest -f menu-management-service/Dockerfile ./menu-management-service
 
   deploy:
     name: Deploy
