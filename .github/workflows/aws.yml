@@ -70,6 +70,9 @@ jobs:
       - name: Change to the project directory
         run: cd menu-management-service
 
+      - name: Build docker image
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/menu-management-service:latest -f menu-management-service/Dockerfile ./menu-management-service
+
       - name: Build, tag, and push image to Amazon ECR
         id: build-image
         env:
