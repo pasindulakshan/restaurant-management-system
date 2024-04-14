@@ -1,6 +1,6 @@
 FROM openjdk:17
 
-COPY target/menu-management-service-0.0.1-SNAPSHOT.jar app.jar
+COPY target/menu-management-service.jar app.jar
 
 EXPOSE 8050
 
