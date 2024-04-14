@@ -55,6 +55,9 @@ public class ModifierGroupTemplateService {
     existingTemplate.setModifiers(modifierGroupTemplate.getModifiers());
     existingTemplate.setMaxCount(modifierGroupTemplate.getMaxCount());
     existingTemplate.setMinCount(modifierGroupTemplate.getMinCount());
+
+    // TODO update the modifierGroupTemplate in menu items
+
     return modifierGroupTemplateRepository.save(existingTemplate);
   }
 }
