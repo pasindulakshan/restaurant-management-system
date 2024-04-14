@@ -28,7 +28,7 @@ public class ModifierGroupTemplateService {
             updateStatus(id, version, status, ModifierGroupTemplate.class);
 
     if (modifierGroupTemplate != null && status == Status.DELETED) {
-      // TODO delete the modifierGroupTemplate from menu items
+      // TODO delete the modifierGroupTemplate from corresponding menu items
     }
 
     return modifierGroupTemplate;
