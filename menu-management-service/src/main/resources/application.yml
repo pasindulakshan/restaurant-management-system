@@ -8,6 +8,6 @@ spring:
     active: DEV
   data:
     mongodb:
-      uri: ${MONGO.DB_URI}
+      uri: "mongodb+srv://it20026448:admin@cluster0.pethk6q.mongodb.net/RESTAURENT_DEV?retryWrites=true&w=majority&appName=Cluster0"
   main:
     allow-bean-definition-overriding: true
