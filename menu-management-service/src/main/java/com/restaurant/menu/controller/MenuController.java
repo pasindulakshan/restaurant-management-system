@@ -27,7 +27,7 @@ import java.util.Optional;
 @Log4j2
 public class MenuController {
     private final MenuService menuService;
-    
+
     @PostMapping
     public ResponseEntity<Menu> createMenu(@RequestBody Menu menu){
         log.info("Creating menu: {}", menu);
@@ -46,6 +46,7 @@ public class MenuController {
         }
     }
 
+    // GET request to retrieve all menus created.
     @GetMapping
     public ResponseEntity<List<Menu>> getAllMenus() {
         log.info("Retrieving all menus");

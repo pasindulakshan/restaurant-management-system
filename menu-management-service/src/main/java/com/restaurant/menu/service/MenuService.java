@@ -22,8 +22,7 @@ public class MenuService {
         return menuRepository.save(menu);
     }
 
-    public List<Menu> getAllMenus() {
-        return menuRepository.findAll();
+    public List<Menu> getAllMenus() { return menuRepository.findAll();
     }
 
     public Optional<Menu> getMenuById(ObjectId id) {
