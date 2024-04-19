@@ -5,9 +5,12 @@ import org.bson.types.ObjectId;
 
 import javax.validation.constraints.NotNull;
 import java.util.List;
+import org.springframework.data.annotation.Id;
+import lombok.Data;
 
+@Data
 public class Category {
-
+  @Id
   @NotNull
   private ObjectId id;
 
