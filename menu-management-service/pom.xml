@@ -68,4 +68,8 @@
         </plugins>
         <finalName>${project.artifactId}</finalName>
     </build>
+    <properties>
+        <sonar.organization>it20026448</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+    </properties>
 </project>
