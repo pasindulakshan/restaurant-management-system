@@ -11,6 +11,7 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
+// Menu model class inherits properties from Audit class.
 @Data
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
