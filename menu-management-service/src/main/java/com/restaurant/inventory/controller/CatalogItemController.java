@@ -36,7 +36,7 @@ public class CatalogItemController {
     // POST request to create a catalog by calling the CatalogItemService createCatalogItem method.
     @PostMapping
     public ResponseEntity<CatalogItem> createCatalogItem(@RequestBody CatalogItem catalogItem){
-        // show message in terminal when creating catelogItem
+        // show message in terminal when creating catalogItem
         log.info("Creating Catalog: {}", catalogItem);
         return ResponseEntity.status(HttpStatus.CREATED).body(catalogItemService.createCatalogItem(catalogItem));
     }
@@ -58,7 +58,7 @@ public class CatalogItemController {
 
     // GET request to retrieve all catalogs created.
     @GetMapping
-    public ResponseEntity<List<CatalogItem>> getAllcatalogItems() {
+    public ResponseEntity<List<CatalogItem>> getAllCatalogItems() {
         // show message in terminal when retrieving all catalogs
         log.info("Retrieving all catalogs");
         // Create a List to retrieve and store all the menu objects
