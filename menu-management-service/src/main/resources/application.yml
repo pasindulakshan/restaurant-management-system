@@ -16,3 +16,4 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: ${ISSUER_URI}
+          
