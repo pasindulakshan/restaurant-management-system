@@ -1,9 +1,9 @@
-package com.restaurant.inventory.service;
-import com.restaurant.inventory.models.CatalogItem;
+package com.restaurant.menu.service;
+import com.restaurant.menu.models.CatalogItem;
+import com.restaurant.menu.repository.CatalogItemRepository;
 import org.bson.types.ObjectId;
 import java.util.List;
 
-import com.restaurant.inventory.repository.CatalogItemRepository;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
@@ -24,7 +24,7 @@ public class CatalogItemService{
     }
 
     // Retrieves all catalog objects from the database using the injected catalogRepository which calls MongoRepository's findAll method.
-    public List<CatalogItem> getAllcatalogItems() {
+    public List<CatalogItem> getAllCatalogItems() {
         return catalogRepository.findAll();
     }
 

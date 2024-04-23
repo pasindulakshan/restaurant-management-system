@@ -1,4 +1,4 @@
-package com.restaurant.inventory.models.embeddable;
+package com.restaurant.menu.models.embeddable;
 
 public enum CatalogItemType {
   INGREDIENT,

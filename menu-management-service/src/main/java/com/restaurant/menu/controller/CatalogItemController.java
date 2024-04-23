@@ -1,4 +1,4 @@
-package com.restaurant.inventory.controller;
+package com.restaurant.menu.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PathVariable;
-import com.restaurant.inventory.service.CatalogItemService;
+import com.restaurant.menu.service.CatalogItemService;
 import org.springframework.http.ResponseEntity;
-import com.restaurant.inventory.models.CatalogItem;
+import com.restaurant.menu.models.CatalogItem;
 import org.springframework.http.HttpStatus;
 import org.bson.types.ObjectId;
 import java.util.List;
@@ -63,7 +63,7 @@ public class CatalogItemController {
         log.info("Retrieving all catalogs");
         // Create a List to retrieve and store all the menu objects
         // calls the getAllCatalogs() method in the CatalogItemService class.
-        List<CatalogItem> catalogItem = catalogItemService.getAllcatalogItems();
+        List<CatalogItem> catalogItem = catalogItemService.getAllCatalogItems();
         return ResponseEntity.ok(catalogItem);
     }
 
