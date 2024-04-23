@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
-@Document(collection = "MENU_ITEM")
+@Document(collection = "CATALOG_ITEM")
 public class CatalogItem extends Audit {
     private String name;
     private String description;
