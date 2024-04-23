@@ -42,4 +42,4 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           MONGO_DB_URI: ${{ secrets.DB_URI }}
           ISSUER_URI: ${{ secrets.ISSUER_URI }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=devorgctse_it20026448
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=devorgctse_ctse-project
