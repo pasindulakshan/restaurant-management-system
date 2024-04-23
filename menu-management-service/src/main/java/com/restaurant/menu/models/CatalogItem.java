@@ -1,7 +1,7 @@
-package com.restaurant.inventory.models;
+package com.restaurant.menu.models;
 
 import com.restaurant.common.models.Audit;
-import com.restaurant.inventory.models.embeddable.CatalogItemType;
+import com.restaurant.menu.models.embeddable.CatalogItemType;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;

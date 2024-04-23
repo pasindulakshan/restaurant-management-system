@@ -1,6 +1,6 @@
-package com.restaurant.inventory.repository;
+package com.restaurant.menu.repository;
 
-import com.restaurant.inventory.models.CatalogItem;
+import com.restaurant.menu.models.CatalogItem;
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
