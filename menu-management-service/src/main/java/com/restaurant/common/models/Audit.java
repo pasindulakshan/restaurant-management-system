@@ -1,5 +1,6 @@
 package com.restaurant.common.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.restaurant.common.models.embeddable.Status;
 import lombok.Data;
 import org.bson.types.ObjectId;
@@ -40,4 +41,13 @@ public class Audit {
 
   @Transient
   private long modelVersion;
+
+  @JsonIgnore
+  public ObjectId getIdAsObjectId() {
+    return this.id;
+  }
+
+  public String getId() {
+    return this.id != null ? this.id.toHexString() : null;
+  }
 }
